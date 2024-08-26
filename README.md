@@ -92,7 +92,7 @@ Food Classification YOLO/
 
 - **Food Classification YOLO/**: The root folder of the project, containing all necessary files and folders for the YOLO model.
   
-- **YOLO/**: Contains the dataset organized into different subsets:
+- **YOLO/**: Contains the dataset organized into different subsets ([**Download**](https://drive.google.com/drive/folders/1xXFvhGCkcrFYWya74-50FxtzEnnSeq2M?usp=drive_link)):
   - **test/**: Includes images and corresponding label files used for testing the model.
     - **images/**: Contains food images for testing.
     - **labels/**: Contains label files for the test images.
@@ -103,7 +103,7 @@ Food Classification YOLO/
     - **images/**: Contains food images for validation.
     - **labels/**: Contains label files for the validation images.
 
-    [**Download Dataset**](https://drive.google.com/drive/folders/1xXFvhGCkcrFYWya74-50FxtzEnnSeq2M?usp=drive_link)
+    
 
 - **data.yaml**: Configuration file for the dataset, defining the classes and paths for training, validation, and test data.
 
