@@ -103,13 +103,13 @@ Food Classification YOLO/
     - **images/**: Contains food images for validation.
     - **labels/**: Contains label files for the validation images.
 
- [**Download Dataset**](https://drive.google.com/drive/folders/1xXFvhGCkcrFYWya74-50FxtzEnnSeq2M?usp=drive_link)
+    [**Download Dataset**](https://drive.google.com/drive/folders/1xXFvhGCkcrFYWya74-50FxtzEnnSeq2M?usp=drive_link)
 
 - **data.yaml**: Configuration file for the dataset, defining the classes and paths for training, validation, and test data.
 
 - **yolo.ipynb**: Jupyter Notebook containing the code for training and testing the YOLO model.
 
-- **yolov8m.pt**: Pre-trained YOLOv8 model file used for initializing the model[Download](https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov8m.pt).
+- **yolov8m.pt**: Pre-trained YOLOv8 model file used for initializing the model ([Download](https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov8m.pt)).
 
 This structure ensures that all components are well-organized for efficient training, validation, and testing of the food classification model using YOLO.
   
