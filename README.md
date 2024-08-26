@@ -53,7 +53,8 @@ To get started with this project, follow these steps:
  ### Folder Structure
 
   The dataset is organized into the following folder structure:
-  ```YOLO/
+  ```
+YOLO/
 ├── test/
 │   ├── images/
 │   │   ├── image1.jpg
