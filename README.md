@@ -50,22 +50,68 @@ To get started with this project, follow these steps:
  - Dhokla
  - Kadhai Paneer
 
- ### Folder Structure
+ ### Project Folder Structure
 
   The dataset is organized into the following folder structure:
-  ```YOLO/ │ ├── test/ │ ├── images/ │ │ ├── image1.jpg │ │ ├── image2.jpg │ │ └── ... │ └── labels/ │ ├── image1.txt │ ├── image2.txt │ └── ... │ ├── train/ │ ├── images/ │ │ ├── image1.jpg │ │ ├── image2.jpg │ │ └── ... │ └── labels/ │ ├── image1.txt │ ├── image2.txt │ └── ... │ └── valid/ ├── images/ │ ├── image1.jpg │ ├── image2.jpg │ └── ... └── labels/ ├── image1.txt ├── image2.txt └── ...```
+  ```
+Food Classification YOLO/
+├── YOLO/
+│   ├── test/
+│   │   ├── images/
+│   │   │   ├── image1.jpg
+│   │   │   ├── image2.jpg
+│   │   │   └── ...
+│   │   └── labels/
+│   │       ├── image1.txt
+│   │       ├── image2.txt
+│   │       └── ...
+│   ├── train/
+│   │   ├── images/
+│   │   │   ├── image1.jpg
+│   │   │   ├── image2.jpg
+│   │   │   └── ...
+│   │   └── labels/
+│   │       ├── image1.txt
+│   │       ├── image2.txt
+│   │       └── ...
+│   └── valid/
+│       ├── images/
+│       │   ├── image1.jpg
+│       │   ├── image2.jpg
+│       │   └── ...
+│       └── labels/
+│           ├── image1.txt
+│           ├── image2.txt
+│           └── ...
+├── data.yaml
+├── yolo.ipynb
+└── yolov8m.pt
+```
 
- ### Description
+ **Description**
 
-  - **Images Folder**: Contains the images of different food items like Apple Pie, Idli, Chapati, Jalebi, Butter Naan, Dal Makhani, Dhokla, and Kadhai Paneer.
-  - **Labels Folder**: Contains the label files corresponding to each image. These labels are used to train the YOLO model for food classification.
+- **Food Classification YOLO/**: The root folder of the project, containing all necessary files and folders for the YOLO model.
+  
+- **YOLO/**: Contains the dataset organized into different subsets ([**Download**](https://drive.google.com/drive/folders/1xXFvhGCkcrFYWya74-50FxtzEnnSeq2M?usp=drive_link)):
+  - **test/**: Includes images and corresponding label files used for testing the model.
+    - **images/**: Contains food images for testing.
+    - **labels/**: Contains label files for the test images.
+  - **train/**: Includes images and label files used for training the model.
+    - **images/**: Contains food images for training.
+    - **labels/**: Contains label files for the training images.
+  - **valid/**: Includes images and label files used for validation.
+    - **images/**: Contains food images for validation.
+    - **labels/**: Contains label files for the validation images.
 
-  Each of the `test`, `train`, and `valid` folders contains two subfolders:
+    
 
-  - **images/**: This subfolder contains the food images used for testing, training, and validation.
-  - **labels/**: This subfolder contains the label files for the respective images, which include information about the food items present in the images.
+- **data.yaml**: Configuration file for the dataset, defining the classes and paths for training, validation, and test data.
 
-  This structure ensures that the YOLO model is trained, validated, and tested with organized and correctly labeled data.
+- **yolo.ipynb**: Jupyter Notebook containing the code for training and testing the YOLO model.
+
+- **yolov8m.pt**: Pre-trained YOLOv8 model file used for initializing the model ([Download](https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov8m.pt)).
+
+This structure ensures that all components are well-organized for efficient training, validation, and testing of the food classification model using YOLO.
   
         
 
@@ -88,15 +134,15 @@ To get started with this project, follow these steps:
 
 ## Features
 
-  **Efficient Training:** Utilizes YOLOv8 for fast and accurate object detection and classification.  
-  **Customizable:** Easily adaptable to different datasets by modifying the configuration files.  
-  **Visualization:** Includes plot generation during training to visualize model performance.  
+  - **Efficient Training:** Utilizes YOLOv8 for fast and accurate object detection and classification.  
+  - **Customizable:** Easily adaptable to different datasets by modifying the configuration files.  
+  - **Visualization:** Includes plot generation during training to visualize model performance.  
 
 ## Configuration
 
-  **Model:** You can change the model by altering the model parameter in the training command. For example, replace yolov8m.pt with yolov8s.pt for a smaller model.  
-  **Data:** Ensure the data.yaml file is correctly configured for your dataset, specifying the paths to training and validation data.  
-  **Epochs:** Adjust the epochs parameter to control the number of training iterations.  
+  - **Model:** You can change the model by altering the model parameter in the training command. For example, replace yolov8m.pt with yolov8s.pt for a smaller model.  
+  - **Data:** Ensure the data.yaml file is correctly configured for your dataset, specifying the paths to training and validation data.  
+  - **Epochs:** Adjust the epochs parameter to control the number of training iterations.  
 
 ## Acknowledgements
 
