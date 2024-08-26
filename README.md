@@ -55,15 +55,15 @@ To get started with this project, follow these steps:
 
 ## Features
 
-  **Efficient Training:** Utilizes YOLOv8 for fast and accurate object detection and classification.
-  **Customizable:** Easily adaptable to different datasets by modifying the configuration files.
-  **Visualization:** Includes plot generation during training to visualize model performance.
+  **Efficient Training:** Utilizes YOLOv8 for fast and accurate object detection and classification.  
+  **Customizable:** Easily adaptable to different datasets by modifying the configuration files.  
+  **Visualization:** Includes plot generation during training to visualize model performance.  
 
 ## Configuration
 
-  **Model:** You can change the model by altering the model parameter in the training command. For example, replace yolov8m.pt with yolov8s.pt for a smaller model.
-  **Data:** Ensure the data.yaml file is correctly configured for your dataset, specifying the paths to training and validation data.
-  **Epochs:** Adjust the epochs parameter to control the number of training iterations.
+  **Model:** You can change the model by altering the model parameter in the training command. For example, replace yolov8m.pt with yolov8s.pt for a smaller model.  
+  **Data:** Ensure the data.yaml file is correctly configured for your dataset, specifying the paths to training and validation data.  
+  **Epochs:** Adjust the epochs parameter to control the number of training iterations.  
 
 ## Acknowledgements
 
@@ -73,6 +73,6 @@ To get started with this project, follow these steps:
 
 For any inquiries or further information, feel free to reach out:
 
-**Name:** Ashwani Kumar Dwivedi
-**Email:** ashwanidwivedi7898@gmail.com
-**GitHub:** [AshwaniCoding](https://github.com/AshwaniCoding)
+**Name:** Ashwani Kumar Dwivedi  
+**Email:** ashwanidwivedi7898@gmail.com  
+**GitHub:** [AshwaniCoding](https://github.com/AshwaniCoding)  
