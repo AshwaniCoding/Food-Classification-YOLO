@@ -21,16 +21,16 @@ This repository contains the code, model weights, and instructions needed to tra
 To get started with this project, follow these steps:
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/food-classification-yolo.git
-    cd Food-Classification-YOLO
-    ```
+
+        git clone https://github.com/yourusername/food-classification-yolo.git
+        cd Food-Classification-YOLO
+
 
 2. Install Dependencies:
    Make sure you have Python installed (preferably Python 3.8 or higher). Install the required dependencies by running:
-    ```bash
-    pip install ultralytics
-    ```
+
+        pip install ultralytics
+
     This will install the ultralytics library along with its dependencies, including YOLOv8.
 
 3. Download or Prepare Your Dataset:
@@ -39,19 +39,19 @@ To get started with this project, follow these steps:
 ## Usage
 
   To train the YOLO model for food classification, use the following command:
-    ```bash
+
     from ultralytics import YOLO
     from IPython.display import display, Image
 
     # Train the YOLO model
     !yolo task=detect mode=train model=yolov8m.pt data=data.yaml epochs=25 imgsz=224 plots=True
-    ```
+
 
   Once training is complete, you can use the trained model to predict and classify food items in images:
-    ```bash
+
     # Predict using the trained model
     !yolo predict model=runs/detect/train/weights/best.pt source='YOLO/test/images/ch40.jpg'
-    ```
+
 
 ## Features
 
@@ -71,8 +71,8 @@ To get started with this project, follow these steps:
 
 ## Contact
 
-  For any inquiries or further information, feel free to reach out:
+For any inquiries or further information, feel free to reach out:
 
-    **Name:** Ashwani Kumar Dwivedi
-    **Email:** ashwanidwivedi7898@gmail.com
-    **GitHub:** [AshwaniCoding](https://github.com/AshwaniCoding)
+**Name:** Ashwani Kumar Dwivedi
+**Email:** ashwanidwivedi7898@gmail.com
+**GitHub:** [AshwaniCoding](https://github.com/AshwaniCoding)
