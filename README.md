@@ -53,6 +53,7 @@ To get started with this project, follow these steps:
  ### Project Folder Structure
 
   The dataset is organized into the following folder structure:
+<<<<<<< HEAD
   ```
 Food Classification YOLO/
 ├── YOLO/
@@ -86,6 +87,36 @@ Food Classification YOLO/
 ├── data.yaml
 ├── yolo.ipynb
 └── yolov8m.pt
+=======
+  ```YOLO/
+├── test/
+│   ├── images/
+│   │   ├── image1.jpg
+│   │   ├── image2.jpg
+│   │   └── ...
+│   └── labels/
+│       ├── image1.txt
+│       ├── image2.txt
+│       └── ...
+├── train/
+│   ├── images/
+│   │   ├── image1.jpg
+│   │   ├── image2.jpg
+│   │   └── ...
+│   └── labels/
+│       ├── image1.txt
+│       ├── image2.txt
+│       └── ...
+└── valid/
+    ├── images/
+    │   ├── image1.jpg
+    │   ├── image2.jpg
+    │   └── ...
+    └── labels/
+        ├── image1.txt
+        ├── image2.txt
+        └── ...
+>>>>>>> e694e91 (Updated README.md)
 ```
 
  **Description**
