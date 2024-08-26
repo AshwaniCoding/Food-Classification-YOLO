@@ -53,7 +53,35 @@ To get started with this project, follow these steps:
  ### Folder Structure
 
   The dataset is organized into the following folder structure:
-  ```YOLO/ │ ├── test/ │ ├── images/ │ │ ├── image1.jpg │ │ ├── image2.jpg │ │ └── ... │ └── labels/ │ ├── image1.txt │ ├── image2.txt │ └── ... │ ├── train/ │ ├── images/ │ │ ├── image1.jpg │ │ ├── image2.jpg │ │ └── ... │ └── labels/ │ ├── image1.txt │ ├── image2.txt │ └── ... │ └── valid/ ├── images/ │ ├── image1.jpg │ ├── image2.jpg │ └── ... └── labels/ ├── image1.txt ├── image2.txt └── ...```
+  ```YOLO/
+├── test/
+│   ├── images/
+│   │   ├── image1.jpg
+│   │   ├── image2.jpg
+│   │   └── ...
+│   └── labels/
+│       ├── image1.txt
+│       ├── image2.txt
+│       └── ...
+├── train/
+│   ├── images/
+│   │   ├── image1.jpg
+│   │   ├── image2.jpg
+│   │   └── ...
+│   └── labels/
+│       ├── image1.txt
+│       ├── image2.txt
+│       └── ...
+└── valid/
+    ├── images/
+    │   ├── image1.jpg
+    │   ├── image2.jpg
+    │   └── ...
+    └── labels/
+        ├── image1.txt
+        ├── image2.txt
+        └── ...
+```
 
  ### Description
 
