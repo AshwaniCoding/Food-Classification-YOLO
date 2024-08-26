@@ -10,6 +10,7 @@ This repository contains the code, model weights, and instructions needed to tra
 
 ## Table of Contents
 - [Installation](#installation)
+- [Dataset](#dataset)
 - [Usage](#usage)
 - [Features](#features)
 - [Configuration](#configuration)
@@ -36,6 +37,38 @@ To get started with this project, follow these steps:
 3. Download or Prepare Your Dataset:
    Ensure you have your dataset ready, with images labeled according to the YOLO format. Modify data.yaml to match your dataset configuration.
 
+## Dataset
+
+ The dataset used in this project consists of images categorized into different types of Indian food items. The food items included are:
+
+ - Apple Pie
+ - Idli
+ - Chapati
+ - Jalebi
+ - Butter Naan
+ - Dal Makhani
+ - Dhokla
+ - Kadhai Paneer
+
+ ### Folder Structure
+
+  The dataset is organized into the following folder structure:
+  ```YOLO/ │ ├── test/ │ ├── images/ │ │ ├── image1.jpg │ │ ├── image2.jpg │ │ └── ... │ └── labels/ │ ├── image1.txt │ ├── image2.txt │ └── ... │ ├── train/ │ ├── images/ │ │ ├── image1.jpg │ │ ├── image2.jpg │ │ └── ... │ └── labels/ │ ├── image1.txt │ ├── image2.txt │ └── ... │ └── valid/ ├── images/ │ ├── image1.jpg │ ├── image2.jpg │ └── ... └── labels/ ├── image1.txt ├── image2.txt └── ...```
+
+ ### Description
+
+  - **Images Folder**: Contains the images of different food items like Apple Pie, Idli, Chapati, Jalebi, Butter Naan, Dal Makhani, Dhokla, and Kadhai Paneer.
+  - **Labels Folder**: Contains the label files corresponding to each image. These labels are used to train the YOLO model for food classification.
+
+  Each of the `test`, `train`, and `valid` folders contains two subfolders:
+
+  - **images/**: This subfolder contains the food images used for testing, training, and validation.
+  - **labels/**: This subfolder contains the label files for the respective images, which include information about the food items present in the images.
+
+  This structure ensures that the YOLO model is trained, validated, and tested with organized and correctly labeled data.
+  
+        
+
 ## Usage
 
   To train the YOLO model for food classification, use the following command:
@@ -50,7 +83,7 @@ To get started with this project, follow these steps:
   Once training is complete, you can use the trained model to predict and classify food items in images:
 
     # Predict using the trained model
-    !yolo predict model=runs/detect/train/weights/best.pt source='YOLO/test/images/ch40.jpg'
+    !yolo predict model="runs/detect/train/weights/best.pt" source='YOLO/test/images/ch40.jpg'
 
 
 ## Features
