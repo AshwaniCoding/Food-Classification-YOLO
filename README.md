@@ -134,15 +134,15 @@ This structure ensures that all components are well-organized for efficient trai
 
 ## Features
 
-  **Efficient Training:** Utilizes YOLOv8 for fast and accurate object detection and classification.  
-  **Customizable:** Easily adaptable to different datasets by modifying the configuration files.  
-  **Visualization:** Includes plot generation during training to visualize model performance.  
+  - **Efficient Training:** Utilizes YOLOv8 for fast and accurate object detection and classification.  
+  - **Customizable:** Easily adaptable to different datasets by modifying the configuration files.  
+  - **Visualization:** Includes plot generation during training to visualize model performance.  
 
 ## Configuration
 
-  **Model:** You can change the model by altering the model parameter in the training command. For example, replace yolov8m.pt with yolov8s.pt for a smaller model.  
-  **Data:** Ensure the data.yaml file is correctly configured for your dataset, specifying the paths to training and validation data.  
-  **Epochs:** Adjust the epochs parameter to control the number of training iterations.  
+  - **Model:** You can change the model by altering the model parameter in the training command. For example, replace yolov8m.pt with yolov8s.pt for a smaller model.  
+  - **Data:** Ensure the data.yaml file is correctly configured for your dataset, specifying the paths to training and validation data.  
+  - **Epochs:** Adjust the epochs parameter to control the number of training iterations.  
 
 ## Acknowledgements
 
