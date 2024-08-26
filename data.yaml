@@ -1,0 +1,12 @@
+#For Drive
+
+train: /content/drive/MyDrive/Food Classification YOLO/YOLO/train/images
+val: /content/drive/MyDrive/Food Classification YOLO/YOLO/valid/images
+
+# "C:\Users\ashwa\Downloads"
+
+# train: YOLO/train/images
+# val: YOLO/valid/images
+
+nc: 8
+names: ['Apple Pie','Butter Naan','Dal Makhani','Kadhai Paneer','Chapati','Dhokla','Idli','Jalebi']
